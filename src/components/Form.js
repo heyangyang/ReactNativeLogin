@@ -30,7 +30,7 @@ export default class Form extends Component {
 
   render() {
     return (
-      <KeyboardAvoidingView behavior="padding">
+      <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <UserInput
           source={usernameImg}
           placeholder="Username"
@@ -58,6 +58,10 @@ export default class Form extends Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+    },
   btnEye: {
     position: 'absolute',
     top: 55,

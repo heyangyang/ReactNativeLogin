@@ -6,7 +6,7 @@ import logoImg from '../images/logo.png';
 export default class Logo extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Image source={logoImg} style={styles.image} />
         <Text style={styles.text}>REACT NATIVE</Text>
       </View>
@@ -15,6 +15,11 @@ export default class Logo extends Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 3,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
   image: {
     width: 80,
     height: 80,

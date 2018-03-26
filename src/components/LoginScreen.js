@@ -12,25 +12,13 @@ const DEVICE_HEIGHT = Dimensions.get('window').height;
 export default class LoginScreen extends Component {
   render() {
     return (
-        <View style={styles.View}>
-            <Wallpaper/>
-                <Logo  style={styles.Logo} />
-                <Form />
-                <SignupSection />
-                <ButtonSubmit />
-                <PlatformLogin />
-        </View>
+            <Wallpaper>
+                <Logo/>
+                <Form/>
+                <ButtonSubmit/>
+                <SignupSection/>
+                <PlatformLogin/>
+        </Wallpaper>
     );
   }
 }
-
-const styles = StyleSheet.create({
-    View: {
-    },
-    Wallpaper: {
-        resizeMode: 'cover',
-    },
-    Logo: {
-        justifyContent: 'center',
-    },
-});
